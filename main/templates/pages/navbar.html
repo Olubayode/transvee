@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg sticky-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home'%}" style="margin-top: -20px; margin-right: 50px;"><img src="https://uploads-ssl.webflow.com/62d5b7016a6dd7dd19e4c0ed/62d604623f9316bc092a74f9_Group%201%20(1).png" loading="lazy" alt="" width="197"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" style="color: purple;"  aria-current="page" href="#section-home"><h5>Home</h5></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: purple;" href="{% url 'login' %}"><h5>About</h5></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: purple;" href="#"><h5>Contacts</h5></a>
+          </li>
+          {% if user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link" style="color: purple;" href="{% url 'logout' %}"><h5>Log-Out</h5></a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" style="color: purple;" href="{% url 'login' %}"><h5>Login</h5></a>
+          </li>
+          {% endif %}
+        </ul>
+      </ul>
+      <form class="d-flex" role="search">
+          <button class="btn-1">API Documentation</button>
+
+          <button class="btn btn-outline" ><a href="https://forms.gle/nm3L8cwHtwoKBFcx6" style="color: white;">Get Quote</a></button>
+      </form>
+    </div>
+  </div>
+</nav>

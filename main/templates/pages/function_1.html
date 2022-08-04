@@ -1,0 +1,53 @@
+{% extends 'pages/dash.html'%}
+
+
+
+{% block content%}
+<div class="container" style="margin-top: 12px;">
+	
+	<div class="search-con" style="margin-left:-2.1cm;">
+		<input type="text" name="search" style="border-radius: 4px; border-color: purple; margin-top: -15px;">
+		<button class="btn-search">Search</button>
+	</div>
+	<div class="container-1">
+		
+		<form  action="function_2" method="get">
+
+		<div class="container-2">
+			<div style="display: flex; justify-content:space-between;">
+			<h3> Translate From:</h3>
+			<p class="dropdown-1" >
+
+        	<select name="language" class="select-field w-select" style="margin-left: 300px;">
+        		<option value='yo'>Yoruba</option>
+        		<option value='ha'>Hausa</option>
+        		<option value="ig">Igbo</option>
+        		<option value="en">English</option>
+        		<option value="sw">Swahili</option>
+        	</select>
+        		</p>
+        		</div>
+
+       	
+        	<!-- <div class="text-block-1">
+        		<p >Title</p>
+        		<input type="text" name="text-in-1" placeholder="Enter Your Context Title" style="border-radius: 4px; padding-right: 10.5cm; border-color: purple; margin-top: -15px;">
+        	</div> -->
+
+        	<div>
+        		<!-- <p>Body</p> -->
+        		<textarea class="textarea-1" placeholder="Type Here" name="texting" style="padding-right: 10cm; padding-bottom: 5cm; border-radius: 4px; border-color: purple; margin-top: 30px;"></textarea>
+        		
+        	</div>   
+        	<div class="btn-trans" >
+        	<button class="btn-tra" type="submit" value="Submit" style="margin-top: 12px; ">Translate</button> 
+        	</div> 
+		</div>
+	</div>
+		</form>
+		
+
+
+		
+
+{% endblock%}
