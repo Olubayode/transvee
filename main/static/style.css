@@ -1,0 +1,110 @@
+
+.sidebar-1{
+  height: 100%;
+  width: 210px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 16px;
+  padding-top: 20px;
+  
+
+}
+.sidebar-1 a{
+	padding: 10px 10px 10px 19px;
+	  text-decoration: none;
+	  font-size: 20px;
+	  color: #818181;
+	display: block;
+
+}
+.b{
+	padding: 10px 10px 10px 19px;
+	  text-decoration: none;
+	  font-size: 20px;
+	  color: #818181;
+	display: block;
+
+}
+.b:hover {
+  color: #f1f1f1;
+  background-color: white;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+
+.img-1{
+	margin-left: 21cm;
+	margin-top: -10cm;
+
+}
+.head-1{
+	margin-top: 250px;
+	padding-left: 80px;
+	font-family: Montserrat, sans-serif;
+	color: #802065;
+	text-align: left;
+	margin-left: 8cm;
+}
+.text-block{
+	padding-left: 300px;
+	font-family: Montserrat, sans-serif;
+	color: #802065;
+	font-size: 15px;
+	line-height: 20px;
+	margin-left: 20cm;
+}
+.search-con{
+	padding-left: 18cm;
+
+}
+.btn-search{
+	width: 100px;
+	background-color: transparent;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 5px;
+
+}
+
+.container-1{
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 3cm;
+	margin-top: 35px;
+}
+
+.btn-trans{
+	padding-top: 12px;
+}
+.button-1{
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
+	margin-top: 20px;
+	margin-left: 500px;
+}
+.btn-1{
+	width: 100px;
+	background-color: transparent;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 5px;
+	
+}
+.btn-2{
+	width: 120px;
+	background-color: transparent;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 5px;
+}
+
+
+
