@@ -1,0 +1,55 @@
+{% extends 'pages/dash.html'%}
+
+
+
+{% block content%}
+<div class="container" style="margin-top: 12px;">
+	
+	
+	<div class="container-1">
+		
+
+		<form action=""  method=GET>
+
+			{% csrf_token %}
+			
+			<div class="container-3">
+				<div style="display: flex; justify-content:space-between;">	
+				<h3> Translated To:</h3>
+				<p class="dropdown-2" >
+	        	<select name="language-1"  class="select-field w-select" style="margin-left: 300px;">
+	        		<option value="">{{tl}}</option>
+	        		
+	        	</select></p>
+
+	        	</div>
+
+	        	<!-- <p>Title</p>
+	        	<div class="text-block-2">
+	        		<input type="text" name="text-in-2" style="border-radius: 4px; padding-right: 10.5cm; border-color: purple; margin-top: -15px;">
+	        	</div> -->
+
+	        	<div>
+	        		<!-- <p>Body</p> -->
+	        		<br>
+	        		<textarea class="textarea-2" name="text-1" style="padding-right: 10cm; padding-bottom: 5cm; border-radius: 4px; border-color: purple;"> {{ tt }}</textarea>
+	        		
+	        	</div> 
+
+			</div>	
+			
+		</div>
+	</div>
+	
+
+		
+		</form>
+	</div>
+</div>
+	
+
+
+
+		
+
+{% endblock%}
